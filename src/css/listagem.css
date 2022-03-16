@@ -1,0 +1,61 @@
+.listagem{
+    max-width: 200px;
+
+}
+
+.listagem .lista-Todos-Pokemons {
+    overflow-y: auto;
+    max-height: 650px;
+    width: 250px;
+    padding: 5px 10px;
+}
+.lista-Todos-Pokemons::-webkit-scrollbar {
+    width: 15px;
+
+}
+.lista-Todos-Pokemons::-webkit-scrollbar-track {
+    background: #DADFE8
+
+}
+.lista-Todos-Pokemons::-webkit-scrollbar-thumb {
+    background-color: #6b727a;   
+    border-radius: 5px;       
+    border: 2.5px solid rgba(0, 0, 0, 0.664);
+
+}
+
+
+
+.listagem .pokemon-icone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: #6b727a;
+    color: #ffffFF;
+    padding: 0 5px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.15s ease-in-out;
+
+
+}
+
+.listagem .pokemon-icone:hover {
+    transform: scale(1.05);
+}
+
+.listagem .pokemon-icone img {
+width: 25%;
+border-radius: 50%;
+}
+
+.listagem .pokemon-icone span {
+    padding-right: 20px;
+}
+.listagem .pokemon-icone.ativo{
+    background-color: #FA6668;
+}
